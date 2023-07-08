@@ -172,9 +172,9 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 /*contact info section*/
-.contact-left{
+/*.contact-left{
     flex-basis: 100%;
-}
+}*/
 .contact-left p{
     margin-top:20px;
     font-size:20px;
