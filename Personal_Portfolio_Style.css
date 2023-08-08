@@ -81,7 +81,6 @@ nav ul li a:hover::after{
 }
 
 
-
 /* about tabs*/
 
 #about{ /*about me*/
@@ -163,9 +162,17 @@ nav ul li a:hover::after{
     transition: background 0.3s, transform 0.3s;
 }
 .portfolio-list div h2{
-    font-size:30px;
+    font-size:35px;
     font-weight:700;
     margin-bottom:10px;
+}
+.portfolio-list div h3{
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:5px;
+}
+.portfolio-list div h3 a {
+    color:#fff;
 }
 .portfolio-list div:hover{
     background:#008be7;

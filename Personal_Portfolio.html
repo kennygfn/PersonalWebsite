@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Ken Gao</title>
+    <link rel = "stylesheet" href = "Personal_Portfolio_Style.css">
+    <script src="https://kit.fontawesome.com/1e260b47bd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src = "images/logo.png" class = "logo"> <? php // insert file name of the logo?>
+            <div id="google_translate_element"> </div> <? php // translate the website language?>
+            <ul id="sidemenu">
+                <li><a href ="#header"> Home</a></li>
+                <li> <a href ="#about"> About</a></li>
+                <li> <a href ="#portfolio"> Portfolio</a></li>
+                <li> <a href ="#contact"> Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick = "openmenu()"></i>
+        </nav>
+        
+        <div class="header-text">
+                <h1> Hello, I'm <span> Ken Gao </span><br> 
+                Welcome to My Personal Website!</h1>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- about section -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <h1 class = "sub-title"> About Me</h1>
+                <p>
+                    I am a Grade 12 student at Bayview Secondary School. My pronouns are he/him<br>
+                    and my astrological sign is Aquarius! I have a German Shepherd and my favourite<br>
+                    video game is Valorant. I enjoy working out and playing basketball in my free time <br> 
+                    as well as coding and working on math problems. My dream university program <br>
+                    is Waterloo Computer Science. Learn more about me down below!
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('passions')">Passions</p>
+                    <p class="tab-links" onclick="opentab('experience')">Work Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="passions">
+                    <ul>
+                        <li><span>Competitive Math</span><br>
+                        I've been competing in various math competitions ever since 5th grade. What interests <br>
+                        me is the multitude of ways one can approach problem solving. The constant search to  <br>
+                        find the fastest solution to a problem is one that I've come to appreciate. 
+                        </li>
+                        <li><span>Competitive Programming</span><br>
+                        My interest for competitive math drew me to competitive programming. I was introduced <br>
+                        to DMOJ, an online judge and a platform for online coding contests. There, I was able to <br>
+                        kickstart my competitive programming journey as I rank up on the DMOJ leaderboard. <br>
+                        </li>
+                        <li><span>Basketball</span><br>I got into basketball at a young age from watching 
+                            the NBA. From 6th Grade, I played <br> rep basketball in the OBA and CYBL leagues for 4 years. 
+                            Unfortunately, due to <br> injuries, I wasn't able to keep up with top-level competition 
+                            after Grade 10. <br>Fortunately, I'm still able to compete as I am a part of my school baskebtall team. 
+                         </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021-2022</span><br>I worked as an English and Math tutor at Kumon. As well, I 
+                        managed and oversaw <br>the data entry of student information, classes, and homework. </li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020-2024</span><br>I am a current student and IB candidate at Bayview Secondary School. </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-col-2">
+                <img src="images/user.png">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio Section -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class = "sub-title"> My Portfolio</h1>
+        <div class="portfolio-list">
+            <div>
+                <h2>Stats </h2>
+                <h3> Advanced Functions - 100 <br><br>
+                    Calculus & Vectors - 100 <br><br>
+                    Physics - 99 <br><br>
+                    English - <br><br>
+                    Chemistry - <br><br>
+                    Economics - <br><br>
+                    <br>
+                    AP Calculus BC - 5 <br><br>
+                    AP Statistics - 5 <br><br>
+                </h3>
+            </div>
+            <div>
+                <h2>Extracurriculars </h2>
+                <h3> Vice President of Athletic Council <br><br>
+                    Chief Financial Officer of Prefect Organization<br> <br>
+                    Bayview Competitive Math Team <br><br>
+                    Team Captain of Varsity Basketball <br><br>
+                    Events Coordinator of A Mile A Miracle <br><br>
+                    DECA Competitor<br><br>
+                    Top 500 on <a href = "https://dmoj.ca/user/ken_g/solved"> DMOJ</a>   (click for profile) <br><br>
+                </h3>
+            </div>
+            <div>
+                <h2>Accomplishments </h2>
+                <h3> AMC 8 Honor Roll <br><br>
+                    Certificate of Distinction: <br>
+                    Gauss, Pascal, Cayley, Fermat, CIMC, CSMC, CCC, Euclid <br><br>
+                    AIME Qualifier <br><br>
+                    USACO Silver Division <br><br>
+                    DECA Regionals Top 10  x2 <br><br>
+                    DECA Provincials Qualifier  x2 <br><br>
+                    Junior Boys Basketball MVP <br><br>
+                </h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- contact section -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class = "sub-title">Contact Information</h1>
+                <p><i class="fa-solid fa-envelope"></i>ken.gao0216@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>416-788-5512</p>
+                <div class="social-icons">
+                    <a href = "https://www.instagram.com/kennyy0216/"><i class="fa-brands fa-instagram"></i></i></a> 
+                    <a href = ""><i class="fa-brands fa-facebook"></i></i></a> 
+                    <a href = ""><i class="fa-brands fa-discord"></i></i></a> 
+                </div>
+                
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Ken Gao</p>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script src = "https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit"></script>
+<script>
+    function googleTranslateElementInit(){
+        new google.translate.TranslateElement(
+            {pageLanguage:'en'},
+            'google_translate_element'
+        );
+    
+    }
+</script>
+</body>
+</html>
